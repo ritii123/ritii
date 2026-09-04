@@ -1,8 +1,84 @@
+```css
+/* ===== VISUAL GERAL ===== */
+
 body {
-    background-color: rgb(67, 67, 245);  
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #f8a8c4, #eeb7ff);
+    color: #5a1745;
+    text-align: center;
 }
 
+
+/* ===== TÍTULO PRINCIPAL ===== */
+
 h1 {
-    color: aquamarine;
-    font-size: 75px;
-}                                                                                                                    
+    color: #9c1458;
+    font-size: 65px;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 8px rgba(156, 20, 88, 0.25);
+}
+
+
+/* ===== TÍTULOS DOS ESTILOS ===== */
+
+h2 {
+    display: inline-block;
+    color: white;
+    background: linear-gradient(90deg, #c2185b, #e85d9e);
+    padding: 15px 40px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    font-size: 32px;
+    box-shadow: 0 6px 15px rgba(194, 24, 91, 0.3);
+}
+
+
+/* ===== VÍDEOS ===== */
+
+iframe {
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    margin: 25px auto;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(90, 23, 69, 0.25);
+}
+
+
+/* ===== EFEITO AO PASSAR O MOUSE ===== */
+
+iframe:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+    box-shadow: 0 15px 30px rgba(194, 24, 91, 0.35);
+}
+
+
+/* ===== CELULAR ===== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+        padding: 12px 25px;
+    }
+
+    iframe {
+        width: 95%;
+        height: 250px;
+    }
+}
+```
